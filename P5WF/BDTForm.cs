@@ -11,9 +11,9 @@ using DevExpress.XtraEditors;
 
 namespace P5WF
 {
-    public partial class Form1 : DevExpress.XtraEditors.XtraForm
+    public partial class BDTForm : DevExpress.XtraEditors.XtraForm
     {
-        public Form1()
+        public BDTForm()
         {
             InitializeComponent();
         }
@@ -32,14 +32,36 @@ namespace P5WF
 
         private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (XtraMessageBox.Show("Are you sure want to delete this record?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) ;
-            bacdtBindingSource.RemoveCurrent();
+            if (XtraMessageBox.Show("Are you sure want to delete this record?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                bacdtBindingSource.RemoveCurrent();
+            }
+
         }
 
         private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            db.SaveChanges();
-            XtraMessageBox.Show("Your data has been successfull save", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            bool cellEmpty = false;
+            int emptyRow = 0;
+            for (int i = 0; i < gridView1.DataRowCount; i++)
+            { 
+                if (String.IsNullOrWhiteSpace(gridView1.GetRowCellValue(i, "IDBDT").ToString()) || String.IsNullOrWhiteSpace(gridView1.GetRowCellValue(i, "TenBacDT").ToString()))
+                {
+                    emptyRow = i + 1;
+                    cellEmpty = true;
+                    break;
+                }
+            }
+
+            if (!cellEmpty)
+            {
+                db.SaveChanges();
+                XtraMessageBox.Show("Your data has been successfully saved", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                XtraMessageBox.Show(string.Format("Row {0} data fields must not be empty!", emptyRow), "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

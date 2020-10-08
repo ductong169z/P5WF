@@ -1,6 +1,6 @@
 ﻿namespace P5WF
 {
-    partial class Form1
+    partial class BDTForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BDTForm));
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar2 = new DevExpress.XtraBars.Bar();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
@@ -44,30 +44,30 @@
             this.dataLayoutControl1 = new DevExpress.XtraDataLayout.DataLayoutControl();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.gridControl = new DevExpress.XtraGrid.GridControl();
+            this.bacdtBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colIDBDT = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTenBacDT = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.IDBDTTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.bacdtBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.TenBacDTTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForIDBDT = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForTenBacDT = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.colIDBDT = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colTenBacDT = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bacdtBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IDBDTTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bacdtBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TenBacDTTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
@@ -164,31 +164,35 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(737, 30);
+            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4);
+            this.barDockControlTop.Size = new System.Drawing.Size(948, 34);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 322);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 386);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(737, 20);
+            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4);
+            this.barDockControlBottom.Size = new System.Drawing.Size(948, 20);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 30);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 34);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 292);
+            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 352);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(737, 30);
+            this.barDockControlRight.Location = new System.Drawing.Point(948, 34);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 292);
+            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 352);
             // 
             // dataLayoutControl1
             // 
@@ -197,42 +201,69 @@
             this.dataLayoutControl1.Controls.Add(this.TenBacDTTextEdit);
             this.dataLayoutControl1.DataSource = this.bacdtBindingSource;
             this.dataLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataLayoutControl1.Location = new System.Drawing.Point(0, 30);
+            this.dataLayoutControl1.Location = new System.Drawing.Point(0, 34);
+            this.dataLayoutControl1.Margin = new System.Windows.Forms.Padding(4);
             this.dataLayoutControl1.Name = "dataLayoutControl1";
             this.dataLayoutControl1.Root = this.layoutControlGroup1;
-            this.dataLayoutControl1.Size = new System.Drawing.Size(737, 292);
+            this.dataLayoutControl1.Size = new System.Drawing.Size(948, 352);
             this.dataLayoutControl1.TabIndex = 4;
             this.dataLayoutControl1.Text = "dataLayoutControl1";
             // 
             // layoutControl1
             // 
             this.layoutControl1.Controls.Add(this.gridControl);
-            this.layoutControl1.Location = new System.Drawing.Point(12, 64);
+            this.layoutControl1.Location = new System.Drawing.Point(12, 72);
+            this.layoutControl1.Margin = new System.Windows.Forms.Padding(4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(713, 216);
+            this.layoutControl1.Size = new System.Drawing.Size(924, 268);
             this.layoutControl1.TabIndex = 6;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // gridControl
             // 
             this.gridControl.DataSource = this.bacdtBindingSource;
+            this.gridControl.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(5);
             this.gridControl.Location = new System.Drawing.Point(12, 12);
             this.gridControl.MainView = this.gridView1;
+            this.gridControl.Margin = new System.Windows.Forms.Padding(4);
             this.gridControl.MenuManager = this.barManager1;
             this.gridControl.Name = "gridControl";
-            this.gridControl.Size = new System.Drawing.Size(689, 192);
+            this.gridControl.Size = new System.Drawing.Size(900, 244);
             this.gridControl.TabIndex = 4;
             this.gridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            // 
+            // bacdtBindingSource
+            // 
+            this.bacdtBindingSource.DataSource = typeof(P5WF.bacdt);
             // 
             // gridView1
             // 
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colIDBDT,
             this.colTenBacDT});
+            this.gridView1.DetailHeight = 416;
             this.gridView1.GridControl = this.gridControl;
             this.gridView1.Name = "gridView1";
+            // 
+            // colIDBDT
+            // 
+            this.colIDBDT.FieldName = "IDBDT";
+            this.colIDBDT.MinWidth = 32;
+            this.colIDBDT.Name = "colIDBDT";
+            this.colIDBDT.Visible = true;
+            this.colIDBDT.VisibleIndex = 0;
+            this.colIDBDT.Width = 121;
+            // 
+            // colTenBacDT
+            // 
+            this.colTenBacDT.FieldName = "TenBacDT";
+            this.colTenBacDT.MinWidth = 32;
+            this.colTenBacDT.Name = "colTenBacDT";
+            this.colTenBacDT.Visible = true;
+            this.colTenBacDT.VisibleIndex = 1;
+            this.colTenBacDT.Width = 121;
             // 
             // Root
             // 
@@ -241,7 +272,7 @@
             this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem2});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(713, 216);
+            this.Root.Size = new System.Drawing.Size(924, 268);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem2
@@ -249,31 +280,29 @@
             this.layoutControlItem2.Control = this.gridControl;
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(693, 196);
+            this.layoutControlItem2.Size = new System.Drawing.Size(904, 248);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
             // IDBDTTextEdit
             // 
             this.IDBDTTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bacdtBindingSource, "IDBDT", true));
-            this.IDBDTTextEdit.Location = new System.Drawing.Point(81, 12);
+            this.IDBDTTextEdit.Location = new System.Drawing.Point(97, 12);
+            this.IDBDTTextEdit.Margin = new System.Windows.Forms.Padding(4);
             this.IDBDTTextEdit.MenuManager = this.barManager1;
             this.IDBDTTextEdit.Name = "IDBDTTextEdit";
-            this.IDBDTTextEdit.Size = new System.Drawing.Size(644, 22);
+            this.IDBDTTextEdit.Size = new System.Drawing.Size(839, 26);
             this.IDBDTTextEdit.StyleController = this.dataLayoutControl1;
             this.IDBDTTextEdit.TabIndex = 4;
-            // 
-            // bacdtBindingSource
-            // 
-            this.bacdtBindingSource.DataSource = typeof(P5WF.bacdt);
             // 
             // TenBacDTTextEdit
             // 
             this.TenBacDTTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bacdtBindingSource, "TenBacDT", true));
-            this.TenBacDTTextEdit.Location = new System.Drawing.Point(81, 38);
+            this.TenBacDTTextEdit.Location = new System.Drawing.Point(97, 42);
+            this.TenBacDTTextEdit.Margin = new System.Windows.Forms.Padding(4);
             this.TenBacDTTextEdit.MenuManager = this.barManager1;
             this.TenBacDTTextEdit.Name = "TenBacDTTextEdit";
-            this.TenBacDTTextEdit.Size = new System.Drawing.Size(644, 22);
+            this.TenBacDTTextEdit.Size = new System.Drawing.Size(839, 26);
             this.TenBacDTTextEdit.StyleController = this.dataLayoutControl1;
             this.TenBacDTTextEdit.TabIndex = 5;
             // 
@@ -285,7 +314,7 @@
             this.layoutControlGroup2,
             this.layoutControlItem1});
             this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(737, 292);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(948, 352);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlGroup2
@@ -297,66 +326,48 @@
             this.ItemForTenBacDT});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "autoGeneratedGroup0";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(717, 52);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(928, 60);
             // 
             // ItemForIDBDT
             // 
             this.ItemForIDBDT.Control = this.IDBDTTextEdit;
             this.ItemForIDBDT.Location = new System.Drawing.Point(0, 0);
             this.ItemForIDBDT.Name = "ItemForIDBDT";
-            this.ItemForIDBDT.Size = new System.Drawing.Size(717, 26);
+            this.ItemForIDBDT.Size = new System.Drawing.Size(928, 30);
             this.ItemForIDBDT.Text = "IDBDT";
-            this.ItemForIDBDT.TextSize = new System.Drawing.Size(66, 16);
+            this.ItemForIDBDT.TextSize = new System.Drawing.Size(82, 19);
             // 
             // ItemForTenBacDT
             // 
             this.ItemForTenBacDT.Control = this.TenBacDTTextEdit;
-            this.ItemForTenBacDT.Location = new System.Drawing.Point(0, 26);
+            this.ItemForTenBacDT.Location = new System.Drawing.Point(0, 30);
             this.ItemForTenBacDT.Name = "ItemForTenBacDT";
-            this.ItemForTenBacDT.Size = new System.Drawing.Size(717, 26);
+            this.ItemForTenBacDT.Size = new System.Drawing.Size(928, 30);
             this.ItemForTenBacDT.Text = "Ten Bac DT";
-            this.ItemForTenBacDT.TextSize = new System.Drawing.Size(66, 16);
+            this.ItemForTenBacDT.TextSize = new System.Drawing.Size(82, 19);
             // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.layoutControl1;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 52);
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 60);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(717, 220);
+            this.layoutControlItem1.Size = new System.Drawing.Size(928, 272);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
-            // colIDBDT
+            // BDTForm
             // 
-            this.colIDBDT.FieldName = "IDBDT";
-            this.colIDBDT.MinWidth = 25;
-            this.colIDBDT.Name = "colIDBDT";
-            this.colIDBDT.Visible = true;
-            this.colIDBDT.VisibleIndex = 0;
-            this.colIDBDT.Width = 94;
-            // 
-            // colTenBacDT
-            // 
-            this.colTenBacDT.FieldName = "TenBacDT";
-            this.colTenBacDT.MinWidth = 25;
-            this.colTenBacDT.Name = "colTenBacDT";
-            this.colTenBacDT.Visible = true;
-            this.colTenBacDT.VisibleIndex = 1;
-            this.colTenBacDT.Width = 94;
-            // 
-            // Form1
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(737, 342);
+            this.ClientSize = new System.Drawing.Size(948, 406);
             this.Controls.Add(this.dataLayoutControl1);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Name = "BDTForm";
+            this.Text = "BDTForm";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
@@ -364,11 +375,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bacdtBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IDBDTTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bacdtBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TenBacDTTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
