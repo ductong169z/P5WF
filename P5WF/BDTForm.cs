@@ -8,6 +8,14 @@ using System.Text;
 using System.Windows.Forms;
 using System.Data.Entity;
 using DevExpress.XtraEditors;
+using Org.BouncyCastle.Math.Field;
+using System.Threading;
+using DevExpress.ClipboardSource.SpreadsheetML;
+using DevExpress.XtraExport.Implementation;
+using Microsoft.Office.Interop.Excel;
+using Worksheet = Microsoft.Office.Interop.Excel.Worksheet;
+using Workbook = Microsoft.Office.Interop.Excel.Workbook;
+using System.Runtime.InteropServices;
 
 namespace P5WF
 {
@@ -17,14 +25,60 @@ namespace P5WF
         {
             InitializeComponent();
         }
+        private void backgroundWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            if (e.Error == null)
+            {
+                Thread.Sleep(100);
+            }
+           
+        }
         EntityMeow db;
         private void Form1_Load(object sender, EventArgs e)
         {
             db = new EntityMeow();
             db.bacdts.Load();
             bacdtBindingSource.DataSource = db.bacdts.Local;
-        }
 
+        }
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+
+            List<bacdt> list = ((BatDTParameter)e.Argument).ListBatDT;
+            Console.WriteLine(list.Count);
+
+            string fileName = ((BatDTParameter)e.Argument).fileName;
+            Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
+            Workbook wb = excel.Workbooks.Add(XlSheetType.xlWorksheet);
+            Worksheet ws = (Worksheet)excel.ActiveSheet;
+            excel.Visible = false;
+            int index = 1;
+            int process = list.Count;
+
+            ws.Cells[index, 1] = "IDBDT";
+            ws.Cells[index, 2] = "TenBacDT";
+
+            foreach (bacdt bac in list)
+            {
+                if (!backgroundWorker.CancellationPending)
+                {
+                    backgroundWorker.ReportProgress(index++ * 100 / process);
+                    ws.Cells[index, 1] = bac.IDBDT;
+                    ws.Cells[index, 2] = bac.TenBacDT;
+
+                }
+            }
+
+            ws.SaveAs(fileName, XlFileFormat.xlOpenXMLWorkbook, Type.Missing, Type.Missing, false, XlSaveAsAccessMode.xlExclusive, XlSaveConflictResolution.xlLocalSessionChanges, Type.Missing, Type.Missing);
+
+
+            wb.Close(true, Type.Missing, Type.Missing);
+            excel.Quit();
+
+            Marshal.ReleaseComObject(ws);
+            Marshal.ReleaseComObject(wb);
+            Marshal.ReleaseComObject(excel);
+        }
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             bacdtBindingSource.AddNew();
@@ -85,6 +139,50 @@ namespace P5WF
                 }
             }
             bacdtBindingSource.ResetBindings(false);
+        }
+
+        private void gridControl_Click(object sender, EventArgs e)
+        {
+
+        }
+        struct BatDTParameter
+        {
+            public List<bacdt> ListBatDT;
+            public string fileName { get; set; }
+        }
+        BatDTParameter _intputbatDTParameter;
+
+
+        private void barButtonItem5_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (backgroundWorker.IsBusy)
+                return;
+            using (SaveFileDialog sfd = new SaveFileDialog()
+            {
+                Filter = "|*.xlsx"
+            })
+            {
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+                    db = new EntityMeow();
+                    db.bacdts.Load();
+                    bacdtBindingSource.DataSource = db.bacdts.ToList();
+                    _intputbatDTParameter.fileName = sfd.FileName;
+                    _intputbatDTParameter.ListBatDT = bacdtBindingSource.DataSource as List<bacdt>;
+                    backgroundWorker.RunWorkerAsync(_intputbatDTParameter);
+
+                }
+            }
+        }
+
+        private void progressBarControl1_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void backgroundWorker_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+
         }
     }
 }
