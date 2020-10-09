@@ -39,7 +39,6 @@ namespace P5WF
             db = new EntityMeow();
             db.bacdts.Load();
             bacdtBindingSource.DataSource = db.bacdts.Local;
-
         }
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
@@ -98,8 +97,14 @@ namespace P5WF
             bool cellEmpty = false;
             int emptyRow = 0;
             for (int i = 0; i < gridView1.DataRowCount; i++)
-            { 
-                if (String.IsNullOrWhiteSpace(gridView1.GetRowCellValue(i, "IDBDT").ToString()) || String.IsNullOrWhiteSpace(gridView1.GetRowCellValue(i, "TenBacDT").ToString()))
+            {
+                if (gridView1.GetRowCellValue(i, "IDBDT") == null || gridView1.GetRowCellValue(i, "TenBacDT") == null)
+                {
+                    emptyRow = i + 1;
+                    cellEmpty = true;
+                    break;
+                }
+                else if (String.IsNullOrWhiteSpace(gridView1.GetRowCellValue(i, "IDBDT").ToString()) || String.IsNullOrWhiteSpace(gridView1.GetRowCellValue(i, "TenBacDT").ToString()))
                 {
                     emptyRow = i + 1;
                     cellEmpty = true;

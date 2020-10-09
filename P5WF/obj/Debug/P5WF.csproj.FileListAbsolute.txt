@@ -247,3 +247,4 @@ C:\Workbench\Coding\GitHub\P5WF\P5WF\P5WF\obj\Debug\P5WF.exe
 C:\Workbench\Coding\GitHub\P5WF\P5WF\P5WF\obj\Debug\P5WF.pdb
 C:\Workbench\Coding\GitHub\P5WF\P5WF\P5WF\obj\Debug\P5WF.BDTForm.resources
 C:\Workbench\Coding\GitHub\P5WF\P5WF\P5WF\bin\Debug\DevExpress.Images.v20.1.dll
+C:\Workbench\Coding\GitHub\P5WF\P5WF\P5WF\obj\Debug\P5WF.MainForm.resources
