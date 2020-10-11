@@ -84,7 +84,6 @@ D:\CH VLVD Nhựt Tân\baigithub\P5WF\P5WF\bin\Debug\es\DevExpress.Pdf.v20.1.Cor
 D:\CH VLVD Nhựt Tân\baigithub\P5WF\P5WF\bin\Debug\ja\DevExpress.Pdf.v20.1.Core.resources.dll
 D:\CH VLVD Nhựt Tân\baigithub\P5WF\P5WF\bin\Debug\ru\DevExpress.Pdf.v20.1.Core.resources.dll
 D:\CH VLVD Nhựt Tân\baigithub\P5WF\P5WF\obj\Debug\P5WF.csprojAssemblyReference.cache
-D:\CH VLVD Nhựt Tân\baigithub\P5WF\P5WF\obj\Debug\P5WF.Form1.resources
 D:\CH VLVD Nhựt Tân\baigithub\P5WF\P5WF\obj\Debug\P5WF.Properties.Resources.resources
 D:\CH VLVD Nhựt Tân\baigithub\P5WF\P5WF\obj\Debug\P5WF.csproj.GenerateResource.cache
 D:\CH VLVD Nhựt Tân\baigithub\P5WF\P5WF\obj\Debug\P5WF.exe.licenses
@@ -248,3 +247,7 @@ C:\Workbench\Coding\GitHub\P5WF\P5WF\P5WF\obj\Debug\P5WF.pdb
 C:\Workbench\Coding\GitHub\P5WF\P5WF\P5WF\obj\Debug\P5WF.BDTForm.resources
 C:\Workbench\Coding\GitHub\P5WF\P5WF\P5WF\bin\Debug\DevExpress.Images.v20.1.dll
 C:\Workbench\Coding\GitHub\P5WF\P5WF\P5WF\obj\Debug\P5WF.MainForm.resources
+D:\CH VLVD Nhựt Tân\baigithub\P5WF\P5WF\bin\Debug\DevExpress.Images.v20.1.dll
+D:\CH VLVD Nhựt Tân\baigithub\P5WF\P5WF\obj\Debug\P5WF.BDTForm.resources
+D:\CH VLVD Nhựt Tân\baigithub\P5WF\P5WF\obj\Debug\P5WF.MainForm.resources
+D:\CH VLVD Nhựt Tân\baigithub\P5WF\P5WF\obj\Debug\P5WF.NDTForm.resources
