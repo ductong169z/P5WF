@@ -32,53 +32,54 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NDTForm));
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar2 = new DevExpress.XtraBars.Bar();
+            this.BtnAdd = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDelete = new DevExpress.XtraBars.BarButtonItem();
+            this.btnUpdate = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.bar3 = new DevExpress.XtraBars.Bar();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.dataLayoutControl1 = new DevExpress.XtraDataLayout.DataLayoutControl();
-            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.BtnAdd = new DevExpress.XtraBars.BarButtonItem();
-            this.btnDelete = new DevExpress.XtraBars.BarButtonItem();
-            this.btnUpdate = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
-            this.nganhdtBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.MaNganhTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.ItemForMaNganh = new DevExpress.XtraLayout.LayoutControlItem();
-            this.IDBDTTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.ItemForIDBDT = new DevExpress.XtraLayout.LayoutControlItem();
-            this.TenNganhTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.ItemForTenNganh = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.nganhdtBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.colMaNganh = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colIDBDT = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTenNganh = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.MaNganhTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.IDBDTTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.TenNganhTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForMaNganh = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForIDBDT = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForTenNganh = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nganhdtBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MaNganhTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForMaNganh)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.IDBDTTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForIDBDT)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TenNganhTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForTenNganh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nganhdtBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MaNganhTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IDBDTTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TenNganhTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForMaNganh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForIDBDT)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForTenNganh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             this.SuspendLayout();
             // 
             // barManager1
@@ -113,6 +114,46 @@
             new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem4)});
             this.bar2.Offset = 5;
             this.bar2.Text = "Tools";
+            // 
+            // BtnAdd
+            // 
+            this.BtnAdd.Caption = "Add";
+            this.BtnAdd.Id = 0;
+            this.BtnAdd.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnAdd.ImageOptions.Image")));
+            this.BtnAdd.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnAdd.ImageOptions.LargeImage")));
+            this.BtnAdd.Name = "BtnAdd";
+            this.BtnAdd.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.BtnAdd.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnAdd_ItemClick);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Caption = "Delete";
+            this.btnDelete.Id = 1;
+            this.btnDelete.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.ImageOptions.Image")));
+            this.btnDelete.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDelete.ImageOptions.LargeImage")));
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btnDelete.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDelete_ItemClick);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Caption = "Update";
+            this.btnUpdate.Id = 2;
+            this.btnUpdate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.ImageOptions.Image")));
+            this.btnUpdate.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnUpdate.ImageOptions.LargeImage")));
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btnUpdate.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnUpdate_ItemClick);
+            // 
+            // barButtonItem4
+            // 
+            this.barButtonItem4.Caption = "Export(Excel)";
+            this.barButtonItem4.Id = 3;
+            this.barButtonItem4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
+            this.barButtonItem4.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
+            this.barButtonItem4.Name = "barButtonItem4";
+            this.barButtonItem4.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
             // 
             // bar3
             // 
@@ -173,126 +214,6 @@
             this.dataLayoutControl1.TabIndex = 4;
             this.dataLayoutControl1.Text = "dataLayoutControl1";
             // 
-            // layoutControlGroup1
-            // 
-            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.layoutControlGroup1.GroupBordersVisible = false;
-            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlGroup2,
-            this.layoutControlItem1});
-            this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(765, 377);
-            this.layoutControlGroup1.TextVisible = false;
-            // 
-            // BtnAdd
-            // 
-            this.BtnAdd.Caption = "Add";
-            this.BtnAdd.Id = 0;
-            this.BtnAdd.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnAdd.ImageOptions.Image")));
-            this.BtnAdd.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnAdd.ImageOptions.LargeImage")));
-            this.BtnAdd.Name = "BtnAdd";
-            this.BtnAdd.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            this.BtnAdd.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnAdd_ItemClick);
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Caption = "Delete";
-            this.btnDelete.Id = 1;
-            this.btnDelete.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.ImageOptions.Image")));
-            this.btnDelete.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDelete.ImageOptions.LargeImage")));
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            this.btnDelete.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDelete_ItemClick);
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Caption = "Update";
-            this.btnUpdate.Id = 2;
-            this.btnUpdate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.ImageOptions.Image")));
-            this.btnUpdate.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnUpdate.ImageOptions.LargeImage")));
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            this.btnUpdate.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnUpdate_ItemClick);
-            // 
-            // barButtonItem4
-            // 
-            this.barButtonItem4.Caption = "barButtonItem4";
-            this.barButtonItem4.Id = 3;
-            this.barButtonItem4.Name = "barButtonItem4";
-            // 
-            // nganhdtBindingSource
-            // 
-            this.nganhdtBindingSource.DataSource = typeof(P5WF.nganhdt);
-            // 
-            // layoutControlGroup2
-            // 
-            this.layoutControlGroup2.AllowDrawBackground = false;
-            this.layoutControlGroup2.GroupBordersVisible = false;
-            this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForMaNganh,
-            this.ItemForIDBDT,
-            this.ItemForTenNganh});
-            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup2.Name = "autoGeneratedGroup0";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(745, 78);
-            // 
-            // MaNganhTextEdit
-            // 
-            this.MaNganhTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.nganhdtBindingSource, "MaNganh", true));
-            this.MaNganhTextEdit.Location = new System.Drawing.Point(77, 12);
-            this.MaNganhTextEdit.MenuManager = this.barManager1;
-            this.MaNganhTextEdit.Name = "MaNganhTextEdit";
-            this.MaNganhTextEdit.Size = new System.Drawing.Size(676, 22);
-            this.MaNganhTextEdit.StyleController = this.dataLayoutControl1;
-            this.MaNganhTextEdit.TabIndex = 4;
-            // 
-            // ItemForMaNganh
-            // 
-            this.ItemForMaNganh.Control = this.MaNganhTextEdit;
-            this.ItemForMaNganh.Location = new System.Drawing.Point(0, 0);
-            this.ItemForMaNganh.Name = "ItemForMaNganh";
-            this.ItemForMaNganh.Size = new System.Drawing.Size(745, 26);
-            this.ItemForMaNganh.Text = "Ma Nganh";
-            this.ItemForMaNganh.TextSize = new System.Drawing.Size(62, 16);
-            // 
-            // IDBDTTextEdit
-            // 
-            this.IDBDTTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.nganhdtBindingSource, "IDBDT", true));
-            this.IDBDTTextEdit.Location = new System.Drawing.Point(77, 38);
-            this.IDBDTTextEdit.MenuManager = this.barManager1;
-            this.IDBDTTextEdit.Name = "IDBDTTextEdit";
-            this.IDBDTTextEdit.Size = new System.Drawing.Size(676, 22);
-            this.IDBDTTextEdit.StyleController = this.dataLayoutControl1;
-            this.IDBDTTextEdit.TabIndex = 5;
-            // 
-            // ItemForIDBDT
-            // 
-            this.ItemForIDBDT.Control = this.IDBDTTextEdit;
-            this.ItemForIDBDT.Location = new System.Drawing.Point(0, 26);
-            this.ItemForIDBDT.Name = "ItemForIDBDT";
-            this.ItemForIDBDT.Size = new System.Drawing.Size(745, 26);
-            this.ItemForIDBDT.Text = "IDBDT";
-            this.ItemForIDBDT.TextSize = new System.Drawing.Size(62, 16);
-            // 
-            // TenNganhTextEdit
-            // 
-            this.TenNganhTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.nganhdtBindingSource, "TenNganh", true));
-            this.TenNganhTextEdit.Location = new System.Drawing.Point(77, 64);
-            this.TenNganhTextEdit.MenuManager = this.barManager1;
-            this.TenNganhTextEdit.Name = "TenNganhTextEdit";
-            this.TenNganhTextEdit.Size = new System.Drawing.Size(676, 22);
-            this.TenNganhTextEdit.StyleController = this.dataLayoutControl1;
-            this.TenNganhTextEdit.TabIndex = 6;
-            // 
-            // ItemForTenNganh
-            // 
-            this.ItemForTenNganh.Control = this.TenNganhTextEdit;
-            this.ItemForTenNganh.Location = new System.Drawing.Point(0, 52);
-            this.ItemForTenNganh.Name = "ItemForTenNganh";
-            this.ItemForTenNganh.Size = new System.Drawing.Size(745, 26);
-            this.ItemForTenNganh.Text = "Ten Nganh";
-            this.ItemForTenNganh.TextSize = new System.Drawing.Size(62, 16);
-            // 
             // layoutControl1
             // 
             this.layoutControl1.Controls.Add(this.gridControl1);
@@ -302,25 +223,6 @@
             this.layoutControl1.Size = new System.Drawing.Size(741, 275);
             this.layoutControl1.TabIndex = 7;
             this.layoutControl1.Text = "layoutControl1";
-            // 
-            // layoutControlItem1
-            // 
-            this.layoutControlItem1.Control = this.layoutControl1;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 78);
-            this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(745, 279);
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem1.TextVisible = false;
-            // 
-            // Root
-            // 
-            this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.Root.GroupBordersVisible = false;
-            this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem2});
-            this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(741, 275);
-            this.Root.TextVisible = false;
             // 
             // gridControl1
             // 
@@ -334,6 +236,10 @@
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
+            // nganhdtBindingSource
+            // 
+            this.nganhdtBindingSource.DataSource = typeof(P5WF.nganhdt);
+            // 
             // gridView1
             // 
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
@@ -342,15 +248,6 @@
             this.colTenNganh});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
-            // 
-            // layoutControlItem2
-            // 
-            this.layoutControlItem2.Control = this.gridControl1;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(721, 255);
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem2.TextVisible = false;
             // 
             // colMaNganh
             // 
@@ -379,6 +276,119 @@
             this.colTenNganh.VisibleIndex = 2;
             this.colTenNganh.Width = 94;
             // 
+            // Root
+            // 
+            this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.Root.GroupBordersVisible = false;
+            this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem2});
+            this.Root.Name = "Root";
+            this.Root.Size = new System.Drawing.Size(741, 275);
+            this.Root.TextVisible = false;
+            // 
+            // layoutControlItem2
+            // 
+            this.layoutControlItem2.Control = this.gridControl1;
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem2.Name = "layoutControlItem2";
+            this.layoutControlItem2.Size = new System.Drawing.Size(721, 255);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem2.TextVisible = false;
+            // 
+            // MaNganhTextEdit
+            // 
+            this.MaNganhTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.nganhdtBindingSource, "MaNganh", true));
+            this.MaNganhTextEdit.Location = new System.Drawing.Point(77, 12);
+            this.MaNganhTextEdit.MenuManager = this.barManager1;
+            this.MaNganhTextEdit.Name = "MaNganhTextEdit";
+            this.MaNganhTextEdit.Size = new System.Drawing.Size(676, 22);
+            this.MaNganhTextEdit.StyleController = this.dataLayoutControl1;
+            this.MaNganhTextEdit.TabIndex = 4;
+            // 
+            // IDBDTTextEdit
+            // 
+            this.IDBDTTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.nganhdtBindingSource, "IDBDT", true));
+            this.IDBDTTextEdit.Location = new System.Drawing.Point(77, 38);
+            this.IDBDTTextEdit.MenuManager = this.barManager1;
+            this.IDBDTTextEdit.Name = "IDBDTTextEdit";
+            this.IDBDTTextEdit.Size = new System.Drawing.Size(676, 22);
+            this.IDBDTTextEdit.StyleController = this.dataLayoutControl1;
+            this.IDBDTTextEdit.TabIndex = 5;
+            // 
+            // TenNganhTextEdit
+            // 
+            this.TenNganhTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.nganhdtBindingSource, "TenNganh", true));
+            this.TenNganhTextEdit.Location = new System.Drawing.Point(77, 64);
+            this.TenNganhTextEdit.MenuManager = this.barManager1;
+            this.TenNganhTextEdit.Name = "TenNganhTextEdit";
+            this.TenNganhTextEdit.Size = new System.Drawing.Size(676, 22);
+            this.TenNganhTextEdit.StyleController = this.dataLayoutControl1;
+            this.TenNganhTextEdit.TabIndex = 6;
+            // 
+            // layoutControlGroup1
+            // 
+            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup1.GroupBordersVisible = false;
+            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlGroup2,
+            this.layoutControlItem1});
+            this.layoutControlGroup1.Name = "layoutControlGroup1";
+            this.layoutControlGroup1.Size = new System.Drawing.Size(765, 377);
+            this.layoutControlGroup1.TextVisible = false;
+            // 
+            // layoutControlGroup2
+            // 
+            this.layoutControlGroup2.AllowDrawBackground = false;
+            this.layoutControlGroup2.GroupBordersVisible = false;
+            this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForMaNganh,
+            this.ItemForIDBDT,
+            this.ItemForTenNganh});
+            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup2.Name = "autoGeneratedGroup0";
+            this.layoutControlGroup2.Size = new System.Drawing.Size(745, 78);
+            // 
+            // ItemForMaNganh
+            // 
+            this.ItemForMaNganh.Control = this.MaNganhTextEdit;
+            this.ItemForMaNganh.Location = new System.Drawing.Point(0, 0);
+            this.ItemForMaNganh.Name = "ItemForMaNganh";
+            this.ItemForMaNganh.Size = new System.Drawing.Size(745, 26);
+            this.ItemForMaNganh.Text = "Ma Nganh";
+            this.ItemForMaNganh.TextSize = new System.Drawing.Size(62, 16);
+            // 
+            // ItemForIDBDT
+            // 
+            this.ItemForIDBDT.Control = this.IDBDTTextEdit;
+            this.ItemForIDBDT.Location = new System.Drawing.Point(0, 26);
+            this.ItemForIDBDT.Name = "ItemForIDBDT";
+            this.ItemForIDBDT.Size = new System.Drawing.Size(745, 26);
+            this.ItemForIDBDT.Text = "IDBDT";
+            this.ItemForIDBDT.TextSize = new System.Drawing.Size(62, 16);
+            // 
+            // ItemForTenNganh
+            // 
+            this.ItemForTenNganh.Control = this.TenNganhTextEdit;
+            this.ItemForTenNganh.Location = new System.Drawing.Point(0, 52);
+            this.ItemForTenNganh.Name = "ItemForTenNganh";
+            this.ItemForTenNganh.Size = new System.Drawing.Size(745, 26);
+            this.ItemForTenNganh.Text = "Ten Nganh";
+            this.ItemForTenNganh.TextSize = new System.Drawing.Size(62, 16);
+            // 
+            // layoutControlItem1
+            // 
+            this.layoutControlItem1.Control = this.layoutControl1;
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 78);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.Size = new System.Drawing.Size(745, 279);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem1.TextVisible = false;
+            // 
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.WorkerReportsProgress = true;
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            // 
             // NDTForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -395,22 +405,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
             this.dataLayoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nganhdtBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MaNganhTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForMaNganh)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.IDBDTTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForIDBDT)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TenNganhTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForTenNganh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nganhdtBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MaNganhTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IDBDTTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TenNganhTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForMaNganh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForIDBDT)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForTenNganh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -448,5 +458,6 @@
         private DevExpress.XtraLayout.LayoutControlItem ItemForIDBDT;
         private DevExpress.XtraLayout.LayoutControlItem ItemForTenNganh;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
