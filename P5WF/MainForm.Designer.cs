@@ -51,9 +51,9 @@
             this.panelControl1.Controls.Add(this.labelControl1);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
-            this.panelControl1.Margin = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.panelControl1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(870, 667);
+            this.panelControl1.Size = new System.Drawing.Size(773, 534);
             this.panelControl1.TabIndex = 0;
             // 
             // tileControl1
@@ -65,13 +65,13 @@
             this.tileControl1.AppearanceText.Options.UseFont = true;
             this.tileControl1.ColumnCount = 2;
             this.tileControl1.Groups.Add(this.tileGroup1);
-            this.tileControl1.Location = new System.Drawing.Point(15, 151);
-            this.tileControl1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tileControl1.Location = new System.Drawing.Point(13, 121);
+            this.tileControl1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tileControl1.MaxId = 8;
             this.tileControl1.Name = "tileControl1";
-            this.tileControl1.Padding = new System.Windows.Forms.Padding(40, 40, 40, 40);
+            this.tileControl1.Padding = new System.Windows.Forms.Padding(36, 32, 36, 32);
             this.tileControl1.RowCount = 2;
-            this.tileControl1.Size = new System.Drawing.Size(840, 466);
+            this.tileControl1.Size = new System.Drawing.Size(747, 373);
             this.tileControl1.TabIndex = 5;
             this.tileControl1.Text = "tileControl1";
             // 
@@ -127,6 +127,7 @@
             this.tileItem3.Id = 6;
             this.tileItem3.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.tileItem3.Name = "tileItem3";
+            this.tileItem3.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileItem3_ItemClick);
             // 
             // tileItem4
             // 
@@ -150,19 +151,20 @@
             this.labelControl1.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.RightCenter;
             this.labelControl1.ImageOptions.Alignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.labelControl1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("labelControl1.ImageOptions.Image")));
-            this.labelControl1.Location = new System.Drawing.Point(285, 50);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.labelControl1.Location = new System.Drawing.Point(253, 40);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(279, 63);
+            this.labelControl1.Size = new System.Drawing.Size(237, 52);
             this.labelControl1.TabIndex = 4;
             this.labelControl1.Text = "Main Form";
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(870, 667);
+            this.ClientSize = new System.Drawing.Size(773, 534);
             this.Controls.Add(this.panelControl1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainForm";
             this.Text = "MainForm";
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();

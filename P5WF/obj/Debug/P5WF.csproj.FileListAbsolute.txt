@@ -251,3 +251,4 @@ D:\CH VLVD Nhựt Tân\baigithub\P5WF\P5WF\bin\Debug\DevExpress.Images.v20.1.dll
 D:\CH VLVD Nhựt Tân\baigithub\P5WF\P5WF\obj\Debug\P5WF.BDTForm.resources
 D:\CH VLVD Nhựt Tân\baigithub\P5WF\P5WF\obj\Debug\P5WF.MainForm.resources
 D:\CH VLVD Nhựt Tân\baigithub\P5WF\P5WF\obj\Debug\P5WF.NDTForm.resources
+D:\CH VLVD Nhựt Tân\baigithub\P5WF\P5WF\obj\Debug\P5WF.SVForm.resources
