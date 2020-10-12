@@ -31,7 +31,7 @@ namespace P5WF
             {
                 Thread.Sleep(100);
             }
-           
+
         }
         EntityMeow db;
         private void Form1_Load(object sender, EventArgs e)
@@ -44,7 +44,6 @@ namespace P5WF
         {
 
             List<bacdt> list = ((BatDTParameter)e.Argument).ListBatDT;
-            Console.WriteLine(list.Count);
 
             string fileName = ((BatDTParameter)e.Argument).fileName;
             Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
@@ -74,9 +73,7 @@ namespace P5WF
             wb.Close(true, Type.Missing, Type.Missing);
             excel.Quit();
 
-            Marshal.ReleaseComObject(ws);
-            Marshal.ReleaseComObject(wb);
-            Marshal.ReleaseComObject(excel);
+    
         }
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -169,11 +166,9 @@ namespace P5WF
             {
                 if (sfd.ShowDialog() == DialogResult.OK)
                 {
-                    db = new EntityMeow();
-                    db.bacdts.Load();
-                    bacdtBindingSource.DataSource = db.bacdts.ToList();
+
                     _intputbatDTParameter.fileName = sfd.FileName;
-                    _intputbatDTParameter.ListBatDT = bacdtBindingSource.DataSource as List<bacdt>;
+                    _intputbatDTParameter.ListBatDT = db.bacdts.ToList() as List<bacdt>;
                     backgroundWorker.RunWorkerAsync(_intputbatDTParameter);
 
                 }
@@ -186,6 +181,11 @@ namespace P5WF
         }
 
         private void backgroundWorker_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+
+        }
+
+        private void bacdtBindingSource_CurrentChanged(object sender, EventArgs e)
         {
 
         }
