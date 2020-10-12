@@ -59,14 +59,14 @@ namespace P5WF
         {
             using (SaveFileDialog sfd = new SaveFileDialog()
             {
-                Filter = "Excel|*.xls"
+                Filter = "Excel|*.xlsx"
             })
             {
                 if (sfd.ShowDialog() == DialogResult.OK)
                 {
-                    nganhdtBindingSource.DataSource = db.nganhdts.ToList();
+                   
                     _intputNganhDTParameter.fileName = sfd.FileName;
-                    _intputNganhDTParameter.ListNganhDT = nganhdtBindingSource.DataSource as List<nganhdt>;
+                    _intputNganhDTParameter.ListNganhDT = db.nganhdts.ToList() as List<nganhdt>;
                     backgroundWorker1.RunWorkerAsync(_intputNganhDTParameter);
                 }
             }

@@ -374,3 +374,4 @@ C:\Users\HAPPY\source\repos\P5WF\P5WF\bin\Debug\es\DevExpress.Office.v20.1.Core.
 C:\Users\HAPPY\source\repos\P5WF\P5WF\bin\Debug\ja\DevExpress.Office.v20.1.Core.resources.dll
 C:\Users\HAPPY\source\repos\P5WF\P5WF\bin\Debug\ru\DevExpress.Office.v20.1.Core.resources.dll
 C:\Users\HAPPY\source\repos\P5WF\P5WF\obj\Debug\P5WF.csproj.CopyComplete
+C:\Users\HAPPY\source\repos\P5WF\P5WF\obj\Debug\P5WF.NDTForm.resources
