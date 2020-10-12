@@ -29,7 +29,7 @@ namespace P5WF
 
         private void tileItem2_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
         {
-
+            new NDTForm().Show();
         }
     }
 }
