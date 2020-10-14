@@ -166,6 +166,12 @@
     <Compile Include="sinh_vien.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="SVForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SVForm.Designer.cs">
+      <DependentUpon>SVForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="BDTForm.resx">
       <DependentUpon>BDTForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -185,6 +191,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SVForm.resx">
+      <DependentUpon>SVForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="App.config" />
     <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -196,6 +205,7 @@
     <None Include="packages.config" />
     <None Include="Properties\DataSources\bacdt.datasource" />
     <None Include="Properties\DataSources\nganhdt.datasource" />
+    <None Include="Properties\DataSources\sinh_vien.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
