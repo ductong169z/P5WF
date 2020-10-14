@@ -22,11 +22,6 @@ namespace P5WF
             new BDTForm().Show();
         }
 
-        private void tileItem4_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
-        {
-            this.Dispose();
-        }
-
         private void tileItem2_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
         {
             new NDTForm().Show();
@@ -35,6 +30,11 @@ namespace P5WF
         private void tileItem3_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
         {
             new SVForm().Show();
+        }
+
+        private void tileItem4_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
+        {
+            this.Dispose();
         }
     }
 }

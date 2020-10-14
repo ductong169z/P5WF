@@ -365,10 +365,12 @@ C:\Workbench\Coding\GitHub\P5WF\P5WF\P5WF\bin\Debug\de\DevExpress.Office.v20.1.C
 C:\Workbench\Coding\GitHub\P5WF\P5WF\P5WF\bin\Debug\es\DevExpress.Office.v20.1.Core.resources.dll
 C:\Workbench\Coding\GitHub\P5WF\P5WF\P5WF\bin\Debug\ja\DevExpress.Office.v20.1.Core.resources.dll
 C:\Workbench\Coding\GitHub\P5WF\P5WF\P5WF\bin\Debug\ru\DevExpress.Office.v20.1.Core.resources.dll
+C:\Workbench\Coding\GitHub\P5WF\P5WF\P5WF\obj\Debug\P5WF.csprojAssemblyReference.cache
 C:\Workbench\Coding\GitHub\P5WF\P5WF\P5WF\obj\Debug\P5WF.BDTForm.resources
 C:\Workbench\Coding\GitHub\P5WF\P5WF\P5WF\obj\Debug\P5WF.MainForm.resources
 C:\Workbench\Coding\GitHub\P5WF\P5WF\P5WF\obj\Debug\P5WF.NDTForm.resources
 C:\Workbench\Coding\GitHub\P5WF\P5WF\P5WF\obj\Debug\P5WF.Properties.Resources.resources
+C:\Workbench\Coding\GitHub\P5WF\P5WF\P5WF\obj\Debug\P5WF.SVForm.resources
 C:\Workbench\Coding\GitHub\P5WF\P5WF\P5WF\obj\Debug\P5WF.csproj.GenerateResource.cache
 C:\Workbench\Coding\GitHub\P5WF\P5WF\P5WF\obj\Debug\P5WF.exe.licenses
 C:\Workbench\Coding\GitHub\P5WF\P5WF\P5WF\obj\Debug\P5WF.csproj.CoreCompileInputs.cache
