@@ -91,33 +91,33 @@ namespace P5WF
 
         private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            //bool cellEmpty = false;
-            //int emptyRow = 0;
-            //for (int i = 0; i < gridView1.DataRowCount; i++)
-            //{
-            //    if (gridView1.GetRowCellValue(i, "IDBDT") == null || gridView1.GetRowCellValue(i, "TenBacDT") == null)
-            //    {
-            //        emptyRow = i + 1;
-            //        cellEmpty = true;
-            //        break;
-            //    }
-            //    else if (String.IsNullOrWhiteSpace(gridView1.GetRowCellValue(i, "IDBDT").ToString()) || String.IsNullOrWhiteSpace(gridView1.GetRowCellValue(i, "TenBacDT").ToString()))
-            //    {
-            //        emptyRow = i + 1;
-            //        cellEmpty = true;
-            //        break;
-            //    }
-            //}
+            bool cellEmpty = false;
+            int emptyRow = 0;
+            for (int i = 0; i < gridView1.DataRowCount; i++)
+            {
+                if (gridView1.GetRowCellValue(i, "IDBDT") == null || gridView1.GetRowCellValue(i, "TenBacDT") == null)
+                {
+                    emptyRow = i + 1;
+                    cellEmpty = true;
+                    break;
+                }
+                else if (String.IsNullOrWhiteSpace(gridView1.GetRowCellValue(i, "IDBDT").ToString()) || String.IsNullOrWhiteSpace(gridView1.GetRowCellValue(i, "TenBacDT").ToString()))
+                {
+                    emptyRow = i + 1;
+                    cellEmpty = true;
+                    break;
+                }
+            }
 
-            //if (!cellEmpty)
-            //{
+            if (!cellEmpty)
+            {
                 db.SaveChanges();
                 XtraMessageBox.Show("Your data has been successfully saved", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //}
-            //else
-            //{
-            //    XtraMessageBox.Show(string.Format("Row {0} data fields must not be empty!", emptyRow), "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //}
+            }
+            else
+            {
+                XtraMessageBox.Show(string.Format("Row {0} data fields must not be empty!", emptyRow), "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
