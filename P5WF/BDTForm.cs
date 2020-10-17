@@ -47,7 +47,6 @@ namespace P5WF
 
             string fileName = ((BatDTParameter)e.Argument).fileName;
             Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
-            Workbook wb = excel.Workbooks.Add(XlSheetType.xlWorksheet);
             Worksheet ws = (Worksheet)excel.ActiveSheet;
             excel.Visible = false;
             int index = 1;
