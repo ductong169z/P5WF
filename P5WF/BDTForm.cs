@@ -39,6 +39,7 @@ namespace P5WF
             db = new EntityMeow();
             db.bacdts.Load();
             bacdtBindingSource.DataSource = db.bacdts.Local;
+            //.....
         }
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
